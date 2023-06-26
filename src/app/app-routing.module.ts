@@ -10,8 +10,8 @@ import { AuthGuard, redirectLoggedInTo, redirectUnauthorizedTo } from '@angular/
 import { NewComponent } from './pages/new/new.component';
 import { ViewComponent } from './pages/view/view.component';
 
-const toLogin = () => redirectUnauthorizedTo(['/user/login']);
-const toHome = () => redirectLoggedInTo(['/admin/home']);
+const toLogin = () => redirectUnauthorizedTo(['/login']);
+const toHome = () => redirectLoggedInTo(['/home']);
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
